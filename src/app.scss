@@ -1,0 +1,11 @@
+
+.app{
+    visibility: 100vh;
+    display: flex;
+    .sections{
+        margin-left: 223px;
+        width: 100%;
+        display: flex;
+        background-color: aqua;
+    }
+}
