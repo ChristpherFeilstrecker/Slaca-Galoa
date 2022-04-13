@@ -2,37 +2,81 @@
 
 .abstract {
 
+
     width: 81vw;
 
     .abstractContainer {
+        border-radius: 3px;
         margin-left: 58px;
+        border-radius: 3px;
         border-width: thin;
         border-style: solid;
         border-color: $boxcolor;
 
         .abstractTitle {
-            padding: 15px;
             background-color: $prymaricolor;
+            padding: 15px;
             font-size: 22px;
             border-bottom-width: thin;
             border-bottom-style: solid;
             border-bottom-color: $boxcolor;
+
         }
-        .abstractTexContainer{
-            
 
-          .abstractText {
-            
-            padding: 15px;
-            color: $secundcolor;
-            line-height: 1.5;
+        .abstractTexContainer {
 
-            #more{
-                display: none;
+            .abstractText {
+                padding: 15px;
+                color: $secundcolor;
+                line-height: 1.5;
+
+                .pointstxt {
+                    display: flex;
+                    margin-left: 69%;
+                    margin-top: -2.5%;
+
+                    .points {
+                        cursor: pointer;
+                    }
+
+                    .btnContainer1 { 
+                                              
+                        margin-bottom: 15px;
+
+                        .btnSeeMore {
+                           cursor: pointer;  
+                            border: none;
+                            background-color: inherit;
+                            color: $textcolor;
+
+                        }
+                    }
+                }
+
+                .more{
+
+                .btnContainer2 {
+                   margin-top: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 5px;
+
+                    .btnSeeMore {
+                        border: none;
+                        background-color: inherit;
+                        color: $textcolor;
+                        cursor: pointer;
+
+                    }
+                }
+                }
+
             }
-        }  
+
+
         }
 
-        
+
     }
 }

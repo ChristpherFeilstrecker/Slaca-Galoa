@@ -11,7 +11,7 @@ export default function Header() {
       <div className='headerrigth'>
         <div className='languageselector'>
           <img  className='globo' src="assets/globo.png" alt="globo" />
-          <select class="selectBox">
+          <select className="selectBox">
             <option value="pt">PT, BR</option>
             <option value="ing">ING, EUA</option>
           </select> 

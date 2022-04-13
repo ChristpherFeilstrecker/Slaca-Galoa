@@ -1,0 +1,154 @@
+@import '../../global.scss';
+
+.discussions {
+    width: 81vw;
+    margin-top: 20px;
+    padding-bottom: 60px;
+
+    .discussionsContainer {
+        border-radius: 3px;
+        margin-left: 58px;
+        border-width: thin;
+        border-style: solid;
+        border-color: $boxcolor;
+
+        .discussionsTitle {
+            padding: 15px;
+            background-color: $prymaricolor;
+            font-size: 22px;
+            border-bottom-width: thin;
+            border-bottom-style: solid;
+            border-bottom-color: $boxcolor;
+        }
+
+        .discussionsDescription {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: $textcolor;
+            font-size: 20px;
+            padding: 15px;
+            
+
+            .img {
+                margin-top: 15px;
+            }
+
+            .discussionText {
+                
+                width: 73vw;
+                margin-top: 15px;
+                font-size: 16px;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                border-bottom-width: thin;
+                border-bottom: solid;
+                border-color: $boxcolor;
+                padding-bottom: 35px;
+
+                .text {
+                    color: $secundcolor;
+                    width: 55vw;
+                }
+            }
+
+            .btnNewTopic {
+                border-radius: 3px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: -18px;
+                background-image: $maincolor;
+                width: 130px;
+                height: 35px;
+                padding: 5px;
+                border: inherit;
+                cursor: pointer;
+            }
+
+            .additionLine1 {
+                background-color: white;
+                width: 16px;
+                height: 4px;
+            }
+
+            .additionLine2 {
+                margin-left: -16px;
+                background-color: white;
+                width: 16px;
+                height: 4px;
+                transform: rotate(90deg);
+            }
+
+            .btnText {
+                color: white;
+                font-size: 16px;
+                margin-left: 5px;
+            }
+
+            .discussionBox {
+                box-shadow: 0px 5px 5px rgb(184, 182, 182);
+                padding-top:10px;
+                padding-bottom:10px;
+                padding-left: 15px;
+                width: 73vw;
+                margin-top: 15px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                border-radius: 3px;
+                border-width: thin;
+                border-style: solid;
+                border-color: $boxcolor;
+                cursor: pointer;
+
+                .questionTitle {}
+
+                .questionAuthor {
+                    margin-top: 2px;
+                    color:black;
+                    font-size: 16px;
+                }
+
+                .question {
+                    margin-top: 10px;
+                    color: $secundcolor;
+                    font-size: 18px;
+
+                }
+
+                .questionOptions{
+                    display: flex;
+                    align-items: center;
+                    margin-top: 10px;
+
+                    .points{
+                        cursor: pointer;
+
+                        .point{
+                            margin: 3px;
+                            border-radius: 100%;
+                            background-color:$textcolor;
+                            width: 4px;
+                            height: 4px;
+                        }
+                    }
+
+                    .heart{
+                        margin-left: 17px;
+                        border-radius: 3px;
+                        width: 26px;
+                        height: 22px;
+                        cursor: pointer;
+                    }
+
+                    .list1{
+                        margin-left: 17px;
+                        color: $secundcolor;
+                    }
+                }
+            }
+        }
+    }
+}

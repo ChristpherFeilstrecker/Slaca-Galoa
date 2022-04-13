@@ -1,0 +1,61 @@
+@import '../../global.scss';
+
+.baseboard {
+    margin-left: 15px;
+    margin-right: 40px;
+    display: flex;
+    border-top-width: thin;
+    border-top-style: solid;
+    border-top-color: $boxcolor;
+
+    .baseboardLeft {
+        padding-left: 10px;
+
+
+        .titleGaloa {
+            font-size: 80px;
+            color:#341947;
+            padding-left: 5px;
+        }
+
+        .subTitleGaloa {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:#71478e ;
+            font-size: 20px;
+            margin-top: -15px;
+
+            .line{
+                background-color: #71478e;
+                height: 2px;
+                width:14px;
+            }
+        }
+
+        .saibamais {
+            margin-top:5px ;
+            background-color: #71478e;
+            border: inherit;
+            border-radius: 5px;
+            width: 100%;
+            height: 40px;
+            font-size: 20px;
+            color: white;
+            cursor: pointer;
+        }
+    }
+
+    .baseboardRigth {
+        margin: 20px;
+        font-size: 18px;
+        color: $secundcolor;
+        line-height: 1.3;
+        .txt1 {}
+
+        .txt2 {
+            margin-top: 15px;
+        }
+    }
+
+}
