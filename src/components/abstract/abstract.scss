@@ -1,0 +1,38 @@
+@import '../../global.scss';
+
+.abstract {
+
+    width: 81vw;
+
+    .abstractContainer {
+        margin-left: 58px;
+        border-width: thin;
+        border-style: solid;
+        border-color: $boxcolor;
+
+        .abstractTitle {
+            padding: 15px;
+            background-color: $prymaricolor;
+            font-size: 22px;
+            border-bottom-width: thin;
+            border-bottom-style: solid;
+            border-bottom-color: $boxcolor;
+        }
+        .abstractTexContainer{
+            
+
+          .abstractText {
+            
+            padding: 15px;
+            color: $secundcolor;
+            line-height: 1.5;
+
+            #more{
+                display: none;
+            }
+        }  
+        }
+
+        
+    }
+}

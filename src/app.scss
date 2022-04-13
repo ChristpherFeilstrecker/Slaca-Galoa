@@ -4,8 +4,9 @@
     display: flex;
     .sections{
         margin-left: 223px;
-        width: 100%;
         display: flex;
-        background-color: aqua;
+        flex-direction: column;
+        width: 100vw;
+        
     }
 }

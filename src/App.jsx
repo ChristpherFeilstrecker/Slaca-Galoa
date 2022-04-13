@@ -1,4 +1,6 @@
 import './app.scss'
+import Abstract from './components/abstract/Abstract';
+import Intro from './components/intro/Intro';
 import Menu from './components/menu/Menu';
 import Header from './components/topbar/Header';
 
@@ -11,7 +13,8 @@ const App = () => {
        
       <div className="sections">
          <Header/>
-         
+         <Intro/>
+         <Abstract/>
        </div>
       </div>
   );

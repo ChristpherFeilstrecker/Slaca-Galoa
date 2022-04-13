@@ -1,0 +1,140 @@
+@import '../../global.scss';
+
+.intro {
+    display: flex;
+
+    .playerContainer {
+        width: 59vw;
+        height: 85vh;
+        margin-left: 35px;
+        margin-top: 18px;
+
+        .playertext {
+            color: $textcolor;
+            font-size: 4vh;
+            font-weight: 100px;
+        }
+
+        .player {
+            margin-top: 19px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+
+            .video {
+                width: 95%;
+
+            }
+
+            .videotext {
+                color: white;
+                width: 53vw;
+                height: 40vh;
+                margin-top: -65vh;
+                font-size: 30px;
+            }
+            .autortext {
+                color: white;
+                width: 53vw;
+                height: 20vh;
+                font-size: 30px;
+                .autorName{
+                    margin-top: 20px;
+                }
+                .autorProf{
+                    margin-top: 5px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .detailContainer {
+        padding-left: 15px;
+
+        .buttons {
+            margin-top: 17px;
+            margin-left: 27px;
+            margin-bottom: 10px;
+            display: flex;
+            gap: 8px;
+
+            .buttonDowload {
+                color: white;
+                background-color: $textcolor;
+                width: 100px;
+                height: 30px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+
+            .buttonIcons {
+                background-color: $textcolor;
+                width: 40px;
+                height: 30px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .textwork {
+            margin-left: 24px;
+            color: $textcolor;
+            font-size: 13px;
+        }
+
+        .containerDetail {
+            margin-top: 10px;
+            border-radius: 3px;
+            border-width: thin;
+            border-style: solid;
+            border-color: $boxcolor;
+
+            .titleDetail {
+                background-color: $prymaricolor;
+                border-bottom-width: thin;
+                border-bottom-style: solid;
+                border-bottom-color: $boxcolor;
+                font-size: 20px;
+                height: 31px;
+                display: flex;
+                align-items: center;
+                padding-left: 10px;
+                position: relative;
+            }
+
+            .textDetail {
+                height: 360px;
+                width: 230px;
+                padding-left: 14px;
+                padding-top: 18px;
+                color: $secundcolor;
+                overflow-y: scroll;
+
+                .detailTop {
+                    font-size: 14px;
+                    margin-bottom: 18px;
+                }
+
+                .detailMiddle {
+                    margin-bottom: 20px;
+                    gap: 20px;
+
+                    .authors {
+                        margin-bottom: 4px;
+                    }
+                }
+
+                .detailBotton {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

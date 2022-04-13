@@ -5,7 +5,7 @@ export default function Menu() {
     <div className='menu '>
 
         <div className="topLogo">SLACA 2019</div>
-        <img src="assets/logo13slaca.png" alt="" />
+        <img src="assets/logo13slaca.png" alt="logo13slaca" />
 
 
         <div className="navigationContainer">

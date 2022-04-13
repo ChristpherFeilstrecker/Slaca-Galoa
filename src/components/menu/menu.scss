@@ -5,7 +5,7 @@
     height: 100%;
     border-right-width: medium;
     border-right-style: solid;
-    border-right-color: #e7e7e7;
+    border-right-color: $boxcolor;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -34,9 +34,10 @@
             display: flex;
             padding: 6px;
             padding-left: 10%;
+            transition: all 0.5s ease;
             border-bottom-width: medium;
             border-bottom-style: solid;
-            border-bottom-color: #e7e7e7;
+            border-bottom-color: $boxcolor;
             
             a {
                 
@@ -46,11 +47,13 @@
             }
 
             &:hover {
-                background-color: #fcf1eb;
+                background-color: $prymaricolor;
                 border-left-width: 5px;
                 border-left-style:solid;
                 border-image: $maincolor 1;
-                border-bottom-width:2px;
+                border-bottom-width: medium;
+                border-bottom-style: solid;
+                border-bottom-color:$boxcolor;
             }
         }
     }
