@@ -25,7 +25,8 @@ export default function Intro() {
         <div className='buttons'>
           <div className='buttonDowload'>
             <img src="assets/arrowdowload.png" alt="arrow-download" />
-            <div className="dowloadText">Download</div>
+            <div className="dowloadText"><a href="assets/CV.pdf" download>Download</a></div>
+            
           </div>
           <div className="buttonIcons">
             <img src="assets/star.png" alt="star" />

@@ -28,69 +28,306 @@
             color: $textcolor;
             font-size: 20px;
             padding: 15px;
-            
 
-            .img {
-                margin-top: 15px;
-            }
-
-            .discussionText {
-                
-                width: 73vw;
-                margin-top: 15px;
-                font-size: 16px;
+            .newdiscussion {
                 display: flex;
-                justify-content: center;
-                text-align: center;
+                flex-direction: column;
+                align-items: center;
                 border-bottom-width: thin;
                 border-bottom: solid;
                 border-color: $boxcolor;
-                padding-bottom: 35px;
+                margin-bottom: 15px;
 
-                .text {
-                    color: $secundcolor;
-                    width: 55vw;
+                .intro {
+                    margin-bottom: 15px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    border-bottom: solid;
+                    border-color: $boxcolor;
+                    margin-bottom: 15px;
+
+
+                    .img {
+                        margin-top: 15px;
+                    }
+
+                    .discussionText {
+                        width: 73vw;
+                        margin-top: 15px;
+                        font-size: 16px;
+                        display: flex;
+                        justify-content: center;
+                        text-align: center;
+                        padding-bottom: 35px;
+
+                        .text {
+                            color: $secundcolor;
+                            width: 55vw;
+                        }
+                    }
+
+                    .btnNewTopic {
+                        border-radius: 3px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-bottom: -20px;
+                        background-image: $maincolor;
+                        width: 130px;
+                        height: 35px;
+                        padding: 5px;
+                        border: inherit;
+                        cursor: pointer;
+                    }
+
+                    .additionLine1 {
+                        background-color: white;
+                        width: 16px;
+                        height: 4px;
+                    }
+
+                    .additionLine2 {
+                        margin-left: -16px;
+                        background-color: white;
+                        width: 16px;
+                        height: 4px;
+                        transform: rotate(90deg);
+                    }
+
+                    .btnText {
+                        color: white;
+                        font-size: 16px;
+                        margin-left: 5px;
+
+                    }
                 }
+
+                .new {
+                    width: 74vw;
+
+
+                    .newTitle {
+                        color: $secundcolor;
+                        display: flex;
+                        justify-content: center;
+                        font-size: 18px;
+
+                    }
+
+                    .title {
+                        margin-top: 20px;
+
+                    }
+
+                    .inputSubject {
+                        width: 97.5%;
+                        height: 30px;
+                        padding-left: 20px;
+                        border-width: thin;
+                        border-style: solid;
+                        border-color: $boxcolor;
+
+                    }
+
+                    .sendContainer {
+                        margin-bottom: 20px;
+                        border-width: thin;
+                        border-style: solid;
+                        border-color: $boxcolor;
+
+                        .inputText {
+                            width: 97%;
+                            height: 70px;
+                            padding-left: 20px;
+                            border: none;
+
+                        }
+
+                        .sendBox {
+                            display: flex;
+                            height: 30px;
+
+                            .optionsSend {
+                                display: flex;
+                                color: black;
+                                background-color: #eaf1f2;
+                                width: 83%;
+                                padding-left: 20px;
+                                gap: 20px;
+                                align-items: center;
+                                cursor: pointer;
+
+                            }
+
+                            .btnSend {
+                                color: white;
+                                background-image: $maincolor;
+                                border: inherit;
+                                cursor: pointer;
+                                border-radius: 3%;
+                                width: 25%;
+                            }
+
+                        }
+                    }
+
+
+
+                }
+
+                .ok {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .okTxt {
+                        margin-top: 20px;
+                        color: $secundcolor;
+                        font-size: 18px;
+                    }
+
+                    a {
+                        text-decoration: inherit;
+                        color: $textcolor;
+                        border-bottom-width: thin;
+                        border-bottom-style: solid;
+                        border-bottom-color: $textcolor;
+                    }
+
+                    .otherWorks {
+                        margin-top: 30px;
+                        font-size: 16px;
+
+                    }
+
+                    .btnNewTopic {
+                        margin-top: -18px;
+                        border-radius: 3px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-image: $maincolor;
+                        width: 200px;
+                        height: 35px;
+                        padding: 5px;
+                        border: inherit;
+                        cursor: pointer;
+                        color: white;
+                        font-size: 16px;
+
+                    }
+
+                    .lin {
+                        margin-top: 60px;
+                        border-bottom-width: thin;
+                        border-bottom-style: solid;
+                        border-bottom-color: $boxcolor;
+                        width: 120%;
+                        height: 10px;
+                    }
+                    .discussionBox {
+                        -webkit-filter: blur(2px);
+                        -moz-filter: blur(2px);
+                        -o-filter: blur(2px);
+                        -ms-filter: blur(2px);
+                        filter: blur(2px);
+                        
+                    }
+
+                    .boxAwaitFeedback {
+                        margin-top: -129px;
+                        background-color: #f5f5f5;
+                        opacity: 70%;
+                        width: 100%;
+                        height: 130px;
+                        border-radius: 3px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+
+                        
+
+                        .iconOK {
+                            display: flex;
+                            flex-direction: column;
+
+                            .contLin1 {
+                                display: flex;
+
+                                .lin1 {
+                                    margin-left: 4px;
+                                    background-color: gray;
+                                    width: 8px;
+                                    height: 4px;
+                                    transform: rotate(55deg)
+                                }
+
+                                .lin2 {
+                                    margin-top: -4px;
+                                    margin-left: -4px;
+                                    background-color: gray;
+                                    width: 16px;
+                                    height: 4px;
+                                    transform: rotate(140deg)
+                                }
+
+                            }
+
+                            .contLin2 {
+                                display: flex;
+                                margin-top: 5px;
+
+                                .lin1 {
+
+                                    background-color: gray;
+                                    width: 12px;
+                                    height: 4px;
+                                    transform: rotate(55deg)
+                                }
+
+                                .lin2 {
+                                    margin-top: -4px;
+                                    margin-left: -5px;
+                                    background-color: gray;
+                                    width: 20px;
+                                    height: 4px;
+                                    transform: rotate(140deg)
+                                }
+
+                            }
+
+                        }
+
+                        .txt {
+                            margin-top: 20px;
+                            color: gray;
+                        }
+
+                        .editTopic {
+                            margin-top: 10px;
+                            font-size: 18px;
+                            border-bottom-width: thin;
+                            border-bottom-style: solid;
+                            cursor: pointer;
+
+                        }
+
+                    }
+                }
+
+
+
             }
 
-            .btnNewTopic {
-                border-radius: 3px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-top: -18px;
-                background-image: $maincolor;
-                width: 130px;
-                height: 35px;
-                padding: 5px;
-                border: inherit;
-                cursor: pointer;
-            }
 
-            .additionLine1 {
-                background-color: white;
-                width: 16px;
-                height: 4px;
-            }
 
-            .additionLine2 {
-                margin-left: -16px;
-                background-color: white;
-                width: 16px;
-                height: 4px;
-                transform: rotate(90deg);
-            }
-
-            .btnText {
-                color: white;
-                font-size: 16px;
-                margin-left: 5px;
-            }
 
             .discussionBox {
                 box-shadow: 0px 5px 5px rgb(184, 182, 182);
-                padding-top:10px;
-                padding-bottom:10px;
+                padding-top: 10px;
+                padding-bottom: 10px;
                 padding-left: 15px;
                 width: 73vw;
                 margin-top: 15px;
@@ -107,7 +344,7 @@
 
                 .questionAuthor {
                     margin-top: 2px;
-                    color:black;
+                    color: black;
                     font-size: 16px;
                 }
 
@@ -118,24 +355,24 @@
 
                 }
 
-                .questionOptions{
+                .questionOptions {
                     display: flex;
                     align-items: center;
                     margin-top: 10px;
 
-                    .points{
+                    .points {
                         cursor: pointer;
 
-                        .point{
+                        .point {
                             margin: 3px;
                             border-radius: 100%;
-                            background-color:$textcolor;
+                            background-color: $textcolor;
                             width: 4px;
                             height: 4px;
                         }
                     }
 
-                    .heart{
+                    .heart {
                         margin-left: 17px;
                         border-radius: 3px;
                         width: 26px;
@@ -143,7 +380,7 @@
                         cursor: pointer;
                     }
 
-                    .list1{
+                    .list1 {
                         margin-left: 17px;
                         color: $secundcolor;
                     }

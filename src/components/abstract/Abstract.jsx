@@ -33,7 +33,6 @@ export default function Abstract() {
             ) 
         }
     })
-    console.log("text", seeText(seeMore))
 
     const learMore = ((setSeeMore) => {
         if (seeMore === "ver mais") {
@@ -42,8 +41,7 @@ export default function Abstract() {
             setSeeMore("ver mais")
         }
     })
-    console.log("seeMore",seeText(seeMore))
-
+   
     useEffect(() => {
         seeText(seeMore);
     }, [seeMore])
