@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import './newDiscussion.scss'
+
 
 export default function NewDiscussions() {
 

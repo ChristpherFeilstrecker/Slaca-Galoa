@@ -4,6 +4,10 @@
 
 
     width: 81vw;
+    @include mobile{
+        margin-top: 10px;
+        width:inherit;
+     }
 
     .abstractContainer {
         border-radius: 3px;
@@ -12,6 +16,10 @@
         border-width: thin;
         border-style: solid;
         border-color: $boxcolor;
+        @include mobile{
+        
+            margin-left: 25px;
+         }
 
         .abstractTitle {
             background-color: $prymaricolor;

@@ -4,6 +4,10 @@
     width: 81vw;
     margin-top: 20px;
     padding-bottom: 60px;
+    @include mobile{
+        width: inherit;
+        
+     }
 
     .discussionsContainer {
         border-radius: 3px;
@@ -11,6 +15,10 @@
         border-width: thin;
         border-style: solid;
         border-color: $boxcolor;
+        @include mobile{
+            margin-left: 25px;
+            
+         }
 
         .discussionsTitle {
             padding: 15px;

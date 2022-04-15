@@ -15,17 +15,26 @@ export default function Intro() {
           <strong className="videotext">
             Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campnas/SP
           </strong>
-          <strong className="autortext">
+
+          <div className="bottonContainer">
+            <div className="circle">
+              <img className="face" src="assets/face.png" alt="face"/>
+            </div>
+            
+          <strong  className="autortext">
             <div className="autorName">Beatriz Christiane de Mello</div>
             <div className="autorProf">FCA / Universidade de Campinas</div>
           </strong>
+          </div>
+          
         </div>
       </div>
       <div className="detailContainer">
+        
         <div className='buttons'>
           <div className='buttonDowload'>
             <img src="assets/arrowdowload.png" alt="arrow-download" />
-            <div className="dowloadText"><a href="assets/CV.pdf" download>Download</a></div>
+            <div className="dowloadText">Download</div>
             
           </div>
           <div className="buttonIcons">

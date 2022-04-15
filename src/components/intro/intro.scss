@@ -3,22 +3,31 @@
 .intro {
     display: flex;
 
+    @include mobile{
+        flex-direction: column;
+
+     }
+
     .playerContainer {
         width: 59vw;
         height: 85vh;
         margin-left: 35px;
         margin-top: 18px;
+        @include mobile{
+            height: inherit;
+            width: inherit;
+         }
 
         .playertext {
             color: $textcolor;
-            font-size: 4vh;
+            font-size: 2vw;
             font-weight: 100px;
         }
 
         .player {
             margin-top: 19px;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
             display: flex;
             flex-direction: column;
@@ -29,23 +38,61 @@
             }
 
             .videotext {
+                margin-left: 20px;
                 color: white;
                 width: 53vw;
-                height: 40vh;
-                margin-top: -65vh;
-                font-size: 30px;
+                height: 18vw;
+                margin-top: -30vw;
+                font-size: 2vw;
+                @include mobile{
+                    margin-top: -45vw;
+                    height: 25vw;
+                 }
             }
+
             .autortext {
                 color: white;
                 width: 53vw;
                 height: 20vh;
-                font-size: 30px;
-                .autorName{
-                    margin-top: 20px;
+                font-size: 2vw;
+                
+
+                .autorName {
+                    margin-top: 10px;
                 }
-                .autorProf{
+
+                .autorProf {
                     margin-top: 5px;
-                    font-size: 20px;
+                    font-size: 2vw;
+                }
+            }
+
+            .bottonContainer {
+                margin-left: 20px;
+                display: flex;
+                justify-content: center;
+                
+                @include mobile{
+                    margin-top: 20px;
+                 }
+
+                .circle {
+                    border-width: thin;
+                    border-style: solid;
+                    border-color: $textcolor;
+                    margin-right: 15px;
+
+                    width: 6vw;
+                    height: 6vw;
+                    border-radius: 100%;
+
+                    .face {
+                        margin-left: 3px;
+                        margin-top: 4px;
+                        width: 5.5vw;
+                        height: 5.5vw;
+                        border-radius: 100%;
+                    }
                 }
             }
         }
@@ -53,13 +100,24 @@
 
     .detailContainer {
         padding-left: 15px;
+        
+        @include mobile{
+            
+         }
 
         .buttons {
+            
             margin-top: 17px;
             margin-left: 27px;
             margin-bottom: 10px;
             display: flex;
             gap: 8px;
+            @include mobile{
+                margin-top: inherit;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+             }
 
             .buttonDowload {
                 color: white;
@@ -97,6 +155,10 @@
             border-width: thin;
             border-style: solid;
             border-color: $boxcolor;
+            @include mobile{
+                margin-left: 10px;
+        
+            }
 
             .titleDetail {
                 background-color: $prymaricolor;
@@ -118,6 +180,13 @@
                 padding-top: 18px;
                 color: $secundcolor;
                 overflow-y: scroll;
+                @include mobile{
+                    
+                    width: 100vw;
+                    height: 200px;
+                    overflow-y: scroll;
+            
+                }
 
                 .detailTop {
                     font-size: 14px;

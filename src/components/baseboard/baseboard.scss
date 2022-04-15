@@ -1,12 +1,21 @@
 @import '../../global.scss';
 
 .baseboard {
+    
     margin-left: 15px;
     margin-right: 40px;
     display: flex;
     border-top-width: thin;
     border-top-style: solid;
     border-top-color: $boxcolor;
+    @include mobile{
+        justify-content: center;
+        align-items: center;
+        width: inherit;
+        margin-left: 5px;
+
+        
+     }
 
     .baseboardLeft {
         padding-left: 10px;

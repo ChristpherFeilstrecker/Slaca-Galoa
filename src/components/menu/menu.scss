@@ -1,6 +1,8 @@
 @import "../../global.scss";
 
 .menu {
+    z-index: 1;
+    background-color: white;
     box-shadow: 3px 5px 5px rgb(184, 182, 182);
     width: 220px;
     height: 100%;
@@ -13,7 +15,17 @@
     justify-content: flex-start;
     transition: all 1s ease;
 
+    @include mobile {
+        margin-left: -220px;
+        height: 120vh;
+
+        &.active {
+            margin-left: 0px;
+        }
+    }
+
     .topLogo {
+        
         background-image: $maincolor;
         width: 100%;
         height: 70px;
@@ -23,7 +35,14 @@
         color: white;
         font-size: 30px;
         font-weight: 500px;
+
     }
+
+    .logo{
+        margin-top: -30px;
+    }
+    
+
 
     .navigationContainer {
         width: 100%;
@@ -31,17 +50,21 @@
         font-size: 18px;
         color: #848081;
 
-        .navigation {
-            display: flex;
-            padding: 6px;
-            padding-left: 10%;
-            transition: all 0.5s ease;
-            border-bottom-width: medium;
-            border-bottom-style: solid;
-            border-bottom-color: $boxcolor;
-            
+        .efectHover {
+            .navigation {
+                display: flex;
+                padding: 6px;
+                padding-left: 10%;
+                transition: all 0.5s ease;
+                border-bottom-width: medium;
+                border-bottom-style: solid;
+                border-bottom-color: $boxcolor;
+            }
+
+
+
             a {
-                
+
                 font-size: inherit;
                 color: inherit;
                 text-decoration: none;
@@ -50,12 +73,40 @@
             &:hover {
                 background-color: $prymaricolor;
                 border-left-width: 5px;
-                border-left-style:solid;
+                border-left-style: solid;
                 border-image: $maincolor 1;
-                border-bottom-width: medium;
-                border-bottom-style: solid;
-                border-bottom-color:$boxcolor;
+
             }
         }
     }
+
+    .arrowContainer {
+        .arrow {
+            
+            width: 40px;
+            opacity: 0%;
+            @include mobile {
+                
+                opacity: inherit;
+                margin-left: 230px;
+                animation: arrowBlink 2s infinite;
+               
+
+                @keyframes arrowBlink {
+                    100% {
+                        opacity: 0;
+
+                    }
+
+                }
+
+                &.active {
+                    margin-left: 0px;
+
+                }
+            }
+        }
+    }
+
+
 }

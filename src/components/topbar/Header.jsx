@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <div className='header'>
       <div className='headerleft'>
-        <div className='subtitleheader'>Anais de Simpósio LAtino Americano de Ciência de Alimentos</div>
+        <div className='subtitleheader'>Anais de Simpósio Latino Americano de Ciência de Alimentos</div>
         <div className='titleheader'>Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</div>
         <div className='subtitleheader'>ISSN: 1234-5678</div>
       </div>
